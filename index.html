@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./estilos/styles.css">
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <main>
+    <section class="contenedor">
+
+      <div class="fecha">
+        <div class="dia">
+          <label id="label-dia">Day</label>
+          <input type="number" placeholder="DD" id="valor-dia">
+          <p class="error" id="error1">The field is required</p>
+          <p class="error" id="error2">Must be a valid day</p>
+          <p class="error" id="error3">Must be a valid date</p>
+        </div>
+        <div class="mes">
+          <label id="label-mes">Month</label>
+          <input type="number" placeholder="MM" id="valor-mes">
+          <p class="error" id="error4">The field is required</p>
+          <p class="error" id="error5">Must be a valid month</p>
+        </div>
+        <div class="año">
+          <label id="label-año">Year</label>
+          <input type="number" placeholder="YYYY" id="valor-año">
+          <p class="error" id="error6">The field is required</p>
+          <p class="error" id="error7">Must be in the past</p>
+        </div>
+      </div>
+
+      <div class="atras">
+        <div class="circulo" id="boton">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="resultados">
+        <h2><span id="resultado-años">--</span> years</h2>
+        <h2><span id="resultado-meses">--</span> months</h2>
+        <h2><span id="resultado-dias">--</span> days</h2>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
